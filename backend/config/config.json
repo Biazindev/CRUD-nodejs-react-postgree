@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "postgres",
+    "porta": "5432",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "",
+    "database": "postgres",
+    "porta": "5432",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "",
+    "database": "postgres",
+    "porta": "5432",
+    "dialect": "postgres"
+  }
+}
