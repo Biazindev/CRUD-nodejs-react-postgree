@@ -42,6 +42,10 @@ function ItemForm() {
     return re.test(String(email).toLowerCase());
   }
 
+  const handleRedirectToList = () => {
+    navigate('/list');
+  };
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -60,11 +64,11 @@ function ItemForm() {
 
     if (id) {
       axios.put(`${BASE_URL}/api/items/${id}`, item)
-        .then(() => navigate('/'))
+        .then(() => navigate('/list'))
         .catch(error => console.error('Ocorreu um erro ao atualizar o item!', error));
     } else {
       axios.post(`${BASE_URL}/api/items`, item)
-        .then(() => navigate('/'))
+        .then(() => navigate('/list'))
         .catch(error => console.error('Ocorreu um erro ao criar o item!', error));
     }
   }
