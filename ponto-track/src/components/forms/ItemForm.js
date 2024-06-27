@@ -111,7 +111,7 @@ function ItemForm() {
         </form>
       </Efeito>
     </div>
-    <LinkT to="/items">Consultar clientes cadastrados</LinkT>
+    <LinkT to="/list">Consultar clientes cadastrados</LinkT>
     </>
 
   );
