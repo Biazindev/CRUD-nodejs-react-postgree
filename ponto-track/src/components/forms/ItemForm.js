@@ -7,7 +7,7 @@ import carro from '../../utils/car.jpg'
 import { LinkT } from '../../styles/index'
 import { Link } from 'react-router-dom';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com/';
 
 function ItemForm() {
   const [name, setName] = useState('');
