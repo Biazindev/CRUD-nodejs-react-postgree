@@ -1,0 +1,13 @@
+{
+  "name": "ponto-track",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd backend && npm install && npm start",
+    "heroku-postbuild": "cd ponto-track && npm install && npm run build"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
