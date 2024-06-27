@@ -12,7 +12,6 @@ export const Efeito = styled.form`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 16px;
   width: 95vw;
-  text-transform: capitalize;
 
   label {
     margin: 16px 0 4px 16px;
