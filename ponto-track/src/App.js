@@ -11,11 +11,11 @@ function App() {
       <EstiloGlobal />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ItemForm />} /> {/* Configura a rota inicial */}
+          <Route path="/" element={<ItemForm />} /> 
           <Route path="/items/:id" element={<ItemDetail />} />
           <Route exact path="/create" element={<ItemForm />} />
           <Route path="/edit/:id" element={<ItemForm />} />
-          <Route path="/list" element={<ItemList />} /> {/* Exemplo de outra rota */}
+          <Route path="/list" element={<ItemList />} /> 
         </Routes>
       </BrowserRouter>
     </div>

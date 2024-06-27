@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 
 app.use('/api', itemRoutes);
 
-app.use(express.static(path.join(__dirname, 'ponto-track/build')));
+app.use(express.static(path.join(__dirname, '../ponto-track/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'ponto-track/build/index.html'));
+  res.sendFile(path.join(__dirname, '../ponto-track/build/index.html'));
 });
 
 sequelize.sync().then(() => {
