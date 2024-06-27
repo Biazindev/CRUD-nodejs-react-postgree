@@ -45,14 +45,12 @@ function ItemForm() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    // Check for duplicate name
     const isDuplicate = items.some(item => item.name === name && item.id !== id);
     if (isDuplicate) {
       setError('Cliente já cadastrado!');
       return;
     }
 
-    // Validate email
     if (!validateEmail(email)) {
       setError('Formato de email inválido. Por favor digite um email válido.');
       return;
@@ -113,7 +111,7 @@ function ItemForm() {
         </form>
       </Efeito>
     </div>
-    <LinkT to="/">Consultar clientes cadastrados</LinkT>
+    <LinkT to="/items">Consultar clientes cadastrados</LinkT>
     </>
 
   );
