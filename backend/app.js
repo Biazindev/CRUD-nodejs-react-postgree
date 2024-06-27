@@ -7,7 +7,10 @@ const sequelize = require('./config/db');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://ponto-track-40cc3d399503.herokuapp.com/',
+  optionsSuccessStatus: 200
+}));
 app.use(bodyParser.json());
 
 app.use('/api', itemRoutes);

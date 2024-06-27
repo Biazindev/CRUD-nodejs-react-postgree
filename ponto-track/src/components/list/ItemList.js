@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { CabecalhoTabela, Tabela, LinkT, CelulaTabela, LinhaTabela, LinkTabela, Text} from './styles'
 
-const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com/';
+const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com';
 
 function ItemList() {
   const [items, setItems] = useState([]);

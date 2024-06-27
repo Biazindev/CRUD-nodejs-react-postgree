@@ -4,7 +4,7 @@ import axios from 'axios';
 import MaskedInput from 'react-text-mask';
 import { LinkA, LinkB, Efeito, BtnSalvar } from './styles'
 
-const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com/';
+const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com';
 
 function ItemDetail() {
   const { id } = useParams();
