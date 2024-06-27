@@ -1,6 +1,5 @@
 
 const Item = require('../models/itemModel')
-// Create Item
 exports.createItem = async (req, res) => {
   try {
     const item = await Item.create(req.body);
@@ -10,7 +9,6 @@ exports.createItem = async (req, res) => {
   }
 };
 
-// Get All Items
 exports.getItems = async (req, res) => {
   try {
     const items = await Item.findAll();
@@ -20,7 +18,6 @@ exports.getItems = async (req, res) => {
   }
 };
 
-// Get Item by ID
 exports.getItemById = async (req, res) => {
   try {
     const item = await Item.findByPk(req.params.id);
@@ -31,7 +28,6 @@ exports.getItemById = async (req, res) => {
   }
 };
 
-// Update Item
 exports.updateItem = async (req, res) => {
   try {
     const [updated] = await Item.update(req.body, {
@@ -45,7 +41,6 @@ exports.updateItem = async (req, res) => {
   }
 };
 
-// Delete Item
 exports.deleteItem = async (req, res) => {
   try {
     const deleted = await Item.destroy({

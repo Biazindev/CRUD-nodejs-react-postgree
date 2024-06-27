@@ -6,14 +6,11 @@ const sequelize = require('./config/db');
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// Routes
 app.use('/api', itemRoutes);
 
-// Sync Database
 sequelize.sync().then(() => {
   console.log('Database & tables created!');
 });
