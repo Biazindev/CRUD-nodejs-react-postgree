@@ -4,7 +4,7 @@ import axios from 'axios';
 import MaskedInput from 'react-text-mask';
 import { LinkA, LinkB, Efeito, BtnSalvar } from './styles'
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'http://localhost:3000';
 
 function ItemDetail() {
   const { id } = useParams();

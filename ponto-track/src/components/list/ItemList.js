@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { CabecalhoTabela, Tabela, LinkT, CelulaTabela, LinhaTabela, LinkTabela, Text} from './styles'
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'http://localhost:3000';
 
 function ItemList() {
   const [items, setItems] = useState([]);
