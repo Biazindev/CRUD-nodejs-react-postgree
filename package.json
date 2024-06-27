@@ -5,7 +5,7 @@
     "start": "cd backend && npm install && npm start",
     "heroku-postbuild": "cd ponto-track && npm install && npm run build"
   },
-  "main": "index.js",
+  "main": "app.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
