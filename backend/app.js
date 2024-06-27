@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('/api', itemRoutes);
+app.use('/', itemRoutes);
 
 sequelize.sync().then(() => {
   console.log('Database & tables created!');
