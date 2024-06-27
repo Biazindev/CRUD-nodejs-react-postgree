@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemList from './components/list/ItemList';
 import ItemDetail from './components/details/ItemDetail';
 import ItemForm from './components/forms/ItemForm';
-import EstiloGlobal from './styles/index'
+import EstiloGlobal from './styles/index';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <EstiloGlobal />
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<ItemList />} />
+          <Route path="/" element={<ItemList />} />
           <Route path="/items/:id" element={<ItemDetail />} />
           <Route path="/create" element={<ItemForm />} />
           <Route path="/edit/:id" element={<ItemForm />} />
