@@ -54,7 +54,7 @@ function ItemDetail() {
   const handleDelete = (id) => {
     axios.delete(`${BASE_URL}/api/items/${id}`)
       .then(() => {
-        navigate('/'); // Redirect to items list after deletion
+        navigate('/list');
       })
       .catch(error => console.error('Ocorreu um erro ao excluir o item!', error));
   };
@@ -120,7 +120,7 @@ function ItemDetail() {
         </div>
       )}
       <LinkB onClick={() => handleDelete(item.id)}>Delete</LinkB>
-      <LinkA to="/">Retornar</LinkA>
+      <LinkA to="/list">Retornar</LinkA>
     </Efeito>
   );
 }
