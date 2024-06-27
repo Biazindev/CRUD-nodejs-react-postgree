@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemForm />} /> 
           <Route path="/items/:id" element={<ItemDetail />} />
-          <Route exact path="/create" element={<ItemForm />} />
+          <Route path="/create" element={<ItemForm />} />
           <Route path="/edit/:id" element={<ItemForm />} />
           <Route path="/list" element={<ItemList />} /> 
         </Routes>
