@@ -15,14 +15,14 @@ app.use('/api', itemRoutes);
 app.use(express.static(path.join(__dirname, 'ponto-track/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'ponto-track/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ponto-track/build/static', 'index.html'));
 });
 
 sequelize.sync().then(() => {
   console.log('Database & tables created!');
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
