@@ -9,10 +9,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Bem-vindo ao seu aplicativo!');
-});
-
 app.use('/api', itemRoutes);
 
 sequelize.sync().then(() => {
