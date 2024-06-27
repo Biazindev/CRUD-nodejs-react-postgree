@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import MaskedInput from 'react-text-mask';
-import {Header, Logo, Text, Efeito, BotaoCadastrar} from './styles'
-import carro from '../../utils/car.jpg'
-import { LinkT } from '../../styles/index'
+import {Header, Logo, Text, Efeito, BotaoCadastrar} from './styles';
+import carro from '../../utils/car.jpg';
+import { LinkT } from '../../styles/index';
 import { Link } from 'react-router-dom';
 
 const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com';
@@ -68,7 +68,7 @@ function ItemForm() {
         .catch(error => console.error('Ocorreu um erro ao atualizar o item!', error));
     } else {
       axios.post(`${BASE_URL}/api/items`, item)
-        .then(() => navigate('/list'))
+        .then(() => navigate('/'))
         .catch(error => console.error('Ocorreu um erro ao criar o item!', error));
     }
   }

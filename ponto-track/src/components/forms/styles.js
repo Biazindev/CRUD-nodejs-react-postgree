@@ -5,7 +5,8 @@ export const Header = styled.div`
   position: relative;
   width: 100%;
   height: 410px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 85%);
+  margin-bottom: 16px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   img {
     width: 100%;
     height: auto;
@@ -108,7 +109,7 @@ export const Text = styled.div`
 `;
 
 export const Efeito = styled.div`
-  margin-top: 24px;
+  margin-top: 32px;
   margin-bottom: 32px;
   background-color: #dcdde1;
   color: #2f3542;

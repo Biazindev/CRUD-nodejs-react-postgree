@@ -16,8 +16,8 @@ const EstiloGlobal = createGlobalStyle`
 export default EstiloGlobal;
 
 export const LinkT = styled(Link)`
-margin-left: 32px;
-  position: relative;
+  margin: 16px;
+  margin-left: 32px;
   bottom: 20px; 
   color: blue;
   text-decoration: none;
@@ -34,7 +34,7 @@ margin-left: 32px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  z-index: 1000; /* Ordem de camadas */
+  z-index: 1000;
 
   &:hover {
     background-color: #192a56;
@@ -53,3 +53,4 @@ margin-left: 32px;
     margin-left: 12px;
   }
 `;
+
