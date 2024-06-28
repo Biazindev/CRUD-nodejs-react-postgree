@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Titulo = styled.h2`
+export const TituloContainer = styled.h2`
     margin-top: -140px;
     color: #101010;
     margin: 0px 0px 10px 0px;

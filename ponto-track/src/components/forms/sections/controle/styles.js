@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Titulo = styled.h1`
+     color: #101010;
+
+     span{
+       color: #F0AA00;
+     }
+`
+
 export const Section = styled.section`
   display: flex;
   justify-content: center;

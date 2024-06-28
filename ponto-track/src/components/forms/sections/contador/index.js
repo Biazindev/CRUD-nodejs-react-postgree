@@ -4,7 +4,7 @@ import * as S from './styles';
 function Estacione() {
     return (
         <S.Section>
-            <S.Titulo>Números da Ponto Track</S.Titulo>
+            <S.TituloContainer>Números da Ponto Track</S.TituloContainer>
             <div className="numbers">
                 <div>
                     <h1>+50</h1>

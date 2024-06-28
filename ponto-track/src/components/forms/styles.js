@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+export const Titulo = styled.h1`
+   color: #101010;
+`
+
 export const Header = styled.div`
   position: relative;
   width: 100%;
@@ -125,7 +129,7 @@ export const Efeito = styled.div`
   margin-top: 32px;
   margin-bottom: 32px;
   background-color: #dcdde1;
-  color: #2f3542;
+  color: #101010;
   border-radius: 8px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   position: absolute;

@@ -13,6 +13,10 @@ const EstiloGlobal = createGlobalStyle`
     text-decoration: none;
     list-style: none;
 
+    h1 {
+    color: #101010;
+    }
+
 
 @media (max-width: 480px) {
   html {

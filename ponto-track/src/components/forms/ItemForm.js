@@ -11,6 +11,7 @@ import Estacione from './sections/estacione/index';
 import Contador from './sections/contador/index';
 import Soluction from './sections/soluction/index';
 import Controle from './sections/controle/index';
+import * as S from './styles';
 
 
 const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com';
@@ -93,7 +94,7 @@ function ItemForm() {
         <img src="https://lp.pontotrack.com/wp-content/uploads/2024/04/logo-ponto-track-1.svg" />
       </Logo>
       <Efeito>
-        <h1>{id ? 'Edit' : 'Solicite'} seu orçamento</h1>
+        <S.Titulo>{id ? 'Edit' : 'Solicite'} seu orçamento</S.Titulo>
         <form onSubmit={handleSubmit}>
           <div>
             <label>Nome:</label>
