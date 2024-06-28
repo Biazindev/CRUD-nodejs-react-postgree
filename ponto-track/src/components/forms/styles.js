@@ -27,6 +27,12 @@ export const Header = styled.div`
   @media (max-width: 480px) {
     height: 250px;
     margin-bottom: -32px;
+    width: 100%;
+    img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   }
 `;
 
@@ -120,6 +126,7 @@ export const Efeito = styled.div`
   margin-bottom: 32px;
   background-color: #dcdde1;
   color: #2f3542;
+  border-radius: 8px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 50%;
@@ -181,14 +188,13 @@ export const BotaoCadastrar = styled.button`
 
   @media (max-width: 768px) {
     font-size: 18px;
-    margin-left: 8px;
     margin-top: -24px;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
-    margin-left: 2px;
-    margin-top: 24px;
+    margin-left: 4px;
+    margin-top: 16px;
   }
 `;
 

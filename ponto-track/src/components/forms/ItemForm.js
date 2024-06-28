@@ -6,6 +6,12 @@ import {Header, Logo, Text, Efeito, BotaoCadastrar} from './styles';
 import carro from '../../utils/car.jpg';
 import { LinkT } from '../../styles/index';
 import { Link } from 'react-router-dom';
+import Works from './sections/works/works';
+import Estacione from './sections/estacione/index';
+import Contador from './sections/contador/index';
+import Soluction from './sections/soluction/index';
+import Controle from './sections/controle/index';
+
 
 const BASE_URL = 'https://back-pt-f0d480ed7f9c.herokuapp.com';
 
@@ -113,6 +119,11 @@ function ItemForm() {
             {error && <p style={{ color: 'red' }}>{error}</p>}
           </div>
         </form>
+        <Works />
+        <Estacione />
+        <Contador />
+        <Soluction />
+        <Controle />
       </Efeito>
     </div>
     <LinkT to="/list">Consultar clientes cadastrados</LinkT>
