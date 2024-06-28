@@ -188,7 +188,7 @@ export const BotaoCadastrar = styled.button`
   @media (max-width: 480px) {
     font-size: 16px;
     margin-left: 2px;
-    margin-top: -24px;
+    margin-top: 24px;
   }
 `;
 

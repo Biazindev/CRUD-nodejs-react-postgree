@@ -11,7 +11,14 @@ const EstiloGlobal = createGlobalStyle`
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     text-decoration: none;
-    list-style: none;   
+    list-style: none;
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 90%;
+  }
+}
 `;
 export default EstiloGlobal;
 

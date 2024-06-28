@@ -61,7 +61,7 @@ export const LinkT = styled(Link)`
     background-color: #192a56;
   }
     @media (max-width: 480px) {
-    bottom: 60px;
+    bottom: 10px;
     }
 `;
 
