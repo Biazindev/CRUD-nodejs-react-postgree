@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Header = styled.div`
   position: relative;
   width: 100%;
-  height: 410px;
+  height: 380px;
   margin-bottom: 16px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   img {
@@ -12,14 +12,21 @@ export const Header = styled.div`
     height: auto;
     display: block;
   }
+  @media (max-width: 1024px) {
+    height: 200px;
+    margin-bottom: 64px;
+    height: 380px;
+  }
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 200px;
+    margin-bottom: 56px;
+    height: 380px;
   }
 
   @media (max-width: 480px) {
-    height: 200px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    height: 250px;
+    margin-bottom: -32px;
   }
 `;
 
@@ -41,7 +48,7 @@ export const Logo = styled.div`
     position: absolute;
   }
      @media (max-width: 1024px) {
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
@@ -143,9 +150,9 @@ export const Efeito = styled.div`
   }
 
   @media (max-width: 480px) {
-    padding: 8px;
-    margin-top: 16px;
-  }
+    padding: 8px; 
+    margin-top: 4px;
+    }
 `;
 
 export const BotaoCadastrar = styled.button`
@@ -175,11 +182,13 @@ export const BotaoCadastrar = styled.button`
   @media (max-width: 768px) {
     font-size: 18px;
     margin-left: 8px;
+    margin-top: -24px;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
     margin-left: 2px;
+    margin-top: -24px;
   }
 `;
 

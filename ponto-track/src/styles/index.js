@@ -50,7 +50,8 @@ export const LinkT = styled(Link)`
     width: 95vw;
     font-size: 12px;
     display: block;
-    margin-left: 12px;
+    margin-left: 8px;
+    margin-top: -32px;
   }
 `;
 

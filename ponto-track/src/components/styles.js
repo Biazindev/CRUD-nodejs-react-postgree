@@ -37,12 +37,13 @@ export const Efeito = styled.form`
 
   @media (max-width: 480px) {
     padding: 8px;
-    margin-top: 16px;
+
   }
 `;
 
 export const BotaoCadastrar = styled.button`
   width: 90vw;
+  position: relative;
   margin-left: 16px;
   margin-top: 24px;
   display: block;
