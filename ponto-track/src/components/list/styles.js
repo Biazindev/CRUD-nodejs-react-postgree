@@ -60,6 +60,9 @@ export const LinkT = styled(Link)`
   &:hover {
     background-color: #192a56;
   }
+    @media (max-width: 480px) {
+    bottom: 60px;
+    }
 `;
 
 export const Text = styled.h1`
