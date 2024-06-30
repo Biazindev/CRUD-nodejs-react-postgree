@@ -10,7 +10,7 @@ export const CabecalhoTabela = styled.th`
   padding: 12px;
   background-color: #007bff;
   color: white;
-  text-align: left;
+  text-align: left;-
   border: 1px solid #ddd;
 `;
 
